@@ -1,70 +1,72 @@
-/* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 header {
     text-align: center;
-    padding: 40px 0;
-    background-color: #333;
-    color: #fff;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 3em;
-}
-
-header p {
-    margin: 10px 0 0;
-    font-size: 1.5em;
-}
-
-main {
-    padding: 20px 0;
-}
-
-section {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
-h2 {
-    font-size: 2em;
-    color: #333;
+header h1 {
+    font-size: 2.5rem;
     margin-bottom: 10px;
+    text-transform: uppercase; /* Make name uppercase */
 }
 
-ul {
+header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column,
+.right-column {
+    width: 48%;
+}
+
+.left-column h2,
+.right-column h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    display: inline-block;
+    padding-bottom: 5px;
+    text-transform: uppercase; /* Make headings uppercase */
+}
+
+.left-column p,
+.right-column p,
+.left-column ul,
+.right-column ul {
+    margin: 10px 0;
+}
+
+.left-column ul,
+.right-column ul {
     list-style-type: square;
     padding-left: 20px;
 }
 
-ul li {
-    font-size: 1.2em;
-    color: #555;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
+.left-column ul li,
+.right-column ul li {
+    margin: 5px 0;
 }
 
 a {
@@ -74,32 +76,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-/* Job Title & Work Experience Styles */
-.job-title p {
-    font-size: 1.5em;
-    color: #333;
-}
-
-.work-experience ul li {
-    margin-bottom: 15px;
-}
-
-.work-experience strong {
-    font-size: 1.2em;
-    color: #333;
-}
-
-.work-experience p {
-    margin-top: 5px;
-    font-size: 1.1em;
-    color: #555;
-}
-
-/* Media Queries for smaller screens */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
 }
