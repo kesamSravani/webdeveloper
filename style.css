@@ -1,19 +1,74 @@
 /* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-h1, h2, h3 {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.5em;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
     color: #333;
-    text-transform: uppercase; /* Make headings uppercase */
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 1.2em;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
 }
 
 a {
-    color: #0066cc;
+    color: #007BFF;
     text-decoration: none;
 }
 
@@ -21,91 +76,30 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Header Section (Name and Title) */
-header {
-    text-align: center;
-    margin-bottom: 40px;
+/* Job Title & Work Experience Styles */
+.job-title p {
+    font-size: 1.5em;
+    color: #333;
 }
 
-header h1 {
-    font-size: 2rem;
-    color: #2c3e50;
+.work-experience ul li {
+    margin-bottom: 15px;
 }
 
-header h3 {
-    font-size: 1.2rem;
-    color: #7f8c8d;
+.work-experience strong {
+    font-size: 1.2em;
+    color: #333;
 }
 
-/* Container to hold both sections */
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 20px;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+.work-experience p {
+    margin-top: 5px;
+    font-size: 1.1em;
+    color: #555;
 }
 
-/* Left Section Styles */
-.left-section {
-    width: 30%;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.left-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.left-section ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-.left-section ul li {
-    margin-bottom: 10px;
-}
-
-.left-section p {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-/* Right Section Styles */
-.right-section {
-    width: 65%;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.right-section section {
-    margin-bottom: 20px;
-}
-
-.right-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.right-section p {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-/* Responsive Design for Smaller Screens */
+/* Media Queries for smaller screens */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .left-section, .right-section {
-        width: 100%;
-        margin-bottom: 20px;
+        width: 90%;
     }
 }
