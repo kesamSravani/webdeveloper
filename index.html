@@ -3,40 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Kesam Sravani</h1>
-        <p>Web Developer</p>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Kesam Sravani</h1>
+            <p>Web Developer</p>
+        </header>
 
-    <section class="main-content">
-        <div class="left-column">
-            <h2>Contact</h2>
-            <p><strong>Email:</strong> kesamsravani7@gmail.com</p>
-            <p><strong>LinkedIn:</strong> <a href="#">Kesam Sravani</a></p>
-            
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
+        <div class="main-content">
+            <div class="left-column">
+                <section class="contact">
+                    <h2>Contact</h2>
+                    <p>Email: kesamsravani7@gmail.com</p>
+                    <p>LinkedIn: <a href="#">Kesam Sravani</a></p>
+                </section>
 
-            <h2>Education</h2>
-            <p>B.Tech: Vignan's Lara Institute of Technology and Science</p>
+                <section class="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </section>
+
+                <section class="education">
+                    <h2>Education</h2>
+                    <p>B.Tech: Vignan's Lara Institute of Technology and Science</p>
+                </section>
+            </div>
+
+            <div class="right-column">
+                <section class="about">
+                    <h2>About</h2>
+                    <p>
+                        I am a passionate Web Developer with experience in creating responsive and dynamic websites. 
+                        I specialize in front-end development using HTML, CSS, and JavaScript.
+                    </p>
+                </section>
+
+                <section class="experience">
+                    <h2>Work Experience</h2>
+                    <p><strong>Web Developer - Unified Mentor (Present)</strong></p>
+                    <ul>
+                        <li>Working on various web development projects.</li>
+                        <li>Focusing on front-end development using modern JavaScript frameworks and tools.</li>
+                    </ul>
+                </section>
+            </div>
         </div>
-
-        <div class="right-column">
-            <h2>About</h2>
-            <p>I am a passionate Web Developer with experience in creating responsive and dynamic websites. I specialize in front-end development using HTML, CSS, and JavaScript.</p>
-            
-            <h2>Job Title</h2>
-            <p><strong>Web Developer - Unified Mentor (Present)</strong></p>
-            <p>Working on various web development projects, focusing on front-end development using modern JavaScript frameworks and tools.</p>
-        </div>
-    </section>
+    </div>
 </body>
 </html>
